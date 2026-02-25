@@ -1,0 +1,106 @@
+:root {
+  --bg: #0d1b2a;
+  --card: #ffffff;
+  --text-dark: #1b263b;
+  --text-light: #e0e1dd;
+  --accent: #269e8e;
+  --radius: 12px;
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+/* Fondo general */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  background:
+    radial-gradient(600px 300px at 20% 10%, rgba(179,136,255,0.1), transparent),
+    radial-gradient(500px 250px at 90% 0%, rgba(0,200,255,0.08), transparent),
+    var(--bg);
+  color: var(--text-light);
+}
+
+/* Container extra padding */
+.container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Cards personalizadas */
+.card {
+  border-radius: var(--radius) !important;
+  background-color: var(--card);
+  color: var(--text-dark);
+}
+
+/* Títulos */
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+/* Código */
+code {
+  font-family: "Fira Code", monospace;
+  background-color: rgba(0,0,0,0.08);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+
+/* Bloques pre */
+pre {
+  background-color: #1b263b;
+  color: #ffffff;
+  border-radius: var(--radius);
+}
+
+/* Tabla */
+.table {
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+/* 🔥 ARREGLO IMPORTANTE: NO sobrescribir .btn */
+/* Solo personalizamos colores si quieres un estilo propio */
+
+.btn-custom {
+  background-color: var(--accent);
+  color: #ffffff;
+  border-radius: var(--radius);
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #1f7f72;
+  color: #ffffff;
+}
+
+/* Formularios más suaves */
+.form-control,
+.form-select {
+  border-radius: var(--radius);
+}
+
+/* Navbar mejora contraste */
+.navbar {
+  border-radius: var(--radius);
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  left: -999px;
+}
+
+.skip-link:focus {
+  left: 0;
+  top: 0;
+  padding: 0.5rem 1rem;
+  background: #8c52ff;
+  color: #fff;
+  z-index: 1000;
+  border-radius: var(--radius);
+}
