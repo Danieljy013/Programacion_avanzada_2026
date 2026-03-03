@@ -1,59 +1,116 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <a href="https://laravel.com" target="_blank">
+    <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="300" alt="Laravel Logo">
+  </a>
 </p>
 
-## About Laravel
+<h1 align="center">Proyecto de Programación Avanzada 2026</h1>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5 Badge">
+  <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap Badge">
+  <img src="https://img.shields.io/badge/Laravel-FC3F3F?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel Badge">
+  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL Badge">
+</p>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🌟 Descripción del Proyecto
 
-## Learning Laravel
+Este proyecto es parte de la asignatura **Programación Avanzada 2026**. Su objetivo principal es **practicar la construcción de aplicaciones web modernas** usando tecnologías actuales:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+- **Frontend:** HTML5, CSS3 y Bootstrap a través de CDN.
+- **Backend:** Laravel (PHP Framework) para estructurar la lógica y manejar rutas, controladores y vistas.
+- **Base de datos:** PostgreSQL, diseñada para manejar usuarios, contenidos y relaciones entre tablas.
+- **Objetivo:** Crear un **CRUD funcional** con vistas para distintos roles de usuario (Administrador y Profesor) y practicar buenas prácticas de programación.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## 🛠 Tecnologías Utilizadas
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+| Tecnología | Descripción |
+|------------|------------|
+| ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) | Lenguaje de marcado principal para la estructura de las páginas web. |
+| ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) | Estilos y diseño de la interfaz. |
+| ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=flat-square&logo=bootstrap&logoColor=white) | Framework CSS cargado por CDN para diseño responsive y componentes. |
+| ![Laravel](https://img.shields.io/badge/Laravel-FC3F3F?style=flat-square&logo=laravel&logoColor=white) | Framework PHP utilizado para backend, rutas y controladores. |
+| ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white) | Base de datos relacional para almacenar usuarios, roles y contenido. |
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## 🚀 Funcionalidades
 
-## Contributing
+- Gestión de **usuarios y roles** (Administrador, Profesor).
+- CRUD básico para contenido educativo y multimedia.
+- Vistas personalizadas según el rol del usuario.
+- Integración de **Bootstrap** para diseño responsive.
+- Migraciones y relaciones en **PostgreSQL** para mantener la integridad de datos.
+- Proyecto listo para extender con nuevas funcionalidades.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## 📁 Estructura del Proyecto
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+```text
+Programacion2026/
+├─ app/
+│  └─ Models/
+├─ database/
+│  └─ migrations/
+├─ public/
+│  └─ css/
+├─ resources/
+│  └─ views/
+├─ routes/
+│  └─ web.php
+├─ README.md
+└─ package.json
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+<p align="center">
+  <img src="https://via.placeholder.com/600x300?text=Vista+Administrador" alt="Vista Administrador">
+  <img src="https://via.placeholder.com/600x300?text=Vista+Profesor" alt="Vista Profesor">
+</p>
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## ⚙️ Cómo Ejecutar el Proyecto
+
+Clonar el repositorio:
+
+
+Clonar el repositorio:
+
+git clone https://github.com/Danieljy013/Programacion_avanzada_2026.git
+
+Instalar dependencias de Laravel:
+
+composer install
+
+Configurar .env para la base de datos PostgreSQL.
+
+Ejecutar migraciones:
+
+php artisan migrate
+
+Levantar el servidor local:
+
+php artisan serve
+
+Abrir en el navegador http://localhost:8000.
+
+---
+
+## 🤝 Contribución
+
+¡Cualquier mejora o sugerencia es bienvenida!  
+Puedes abrir un **pull request** o **issue** en GitHub para sugerir cambios.
+
+---
+
+## 📄 Licencia
+
+Proyecto con fines educativos de **Programación Avanzada 2026**.  
+El código puede ser reutilizado para aprendizaje y práctica personal.
+
+<p align="center">Made with ❤️ usando Laravel, HTML5 y Bootstrap</p>
