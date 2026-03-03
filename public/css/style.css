@@ -1,106 +1,174 @@
-:root {
-  --bg: #0d1b2a;
-  --card: #ffffff;
-  --text-dark: #1b263b;
-  --text-light: #e0e1dd;
-  --accent: #269e8e;
-  --radius: 12px;
+/* ===== BLACKBOX STYLE THEME ===== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+
+body {
+    background: radial-gradient(circle at top, #111827 0%, #0b0f19 60%, #05070d 100%);
+    color: #e5e7eb;
+    font-family: 'Inter', sans-serif;
 }
 
-/* Reset */
-* {
-  box-sizing: border-box;
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #0f172a, #111827) !important;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
-/* Fondo general */
-html, body {
-  height: 100%;
-  margin: 0;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-  background:
-    radial-gradient(600px 300px at 20% 10%, rgba(179,136,255,0.1), transparent),
-    radial-gradient(500px 250px at 90% 0%, rgba(0,200,255,0.08), transparent),
-    var(--bg);
-  color: var(--text-light);
+/* NAVBAR */
+.navbar {
+    background: rgba(20, 25, 40, 0.6) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.05);
 }
 
-/* Container extra padding */
-.container {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.nav-link {
+    color: #9ca3af !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
 
-/* Cards personalizadas */
+.nav-link:hover {
+    color: #ffffff !important;
+    transform: translateY(-2px);
+}
+
+/* CARDS */
 .card {
-  border-radius: var(--radius) !important;
-  background-color: var(--card);
-  color: var(--text-dark);
+    border: 1px solid rgba(255,255,255,0.06) !important;
+    background: rgba(17, 24, 39, 0.75) !important;
+    border-radius: 18px;
+    backdrop-filter: blur(16px);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* TITULOS */
+h1, h2, h5 {
+    font-weight: 600;
+    letter-spacing: 0.5px;  
+}
+.text-white-custom {
+    color: #ffffff !important;
+}
+
+/* PRE CODE */
+pre {
+    background-color: #0f172a !important;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+/* LIST GROUP */
+.list-group-item {
+    background-color: #111827 !important;
+    color: #e5e7eb;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+/* TABLE */
+table {
+    background: #111827 !important;
+    color: #000000;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+thead {
+    background: #efefef !important;
+}
+
+thead th {
+     color: c#fdfdfd !important;
+    font-weight: 600;
+}
+
+tbody tr {
+    background: #fefefe;
+    transition: 0.2s ease;
+}
+
+tbody tr:hover {
+    background: #000000;
+}
+
+/* FORM */
+.form-control {
+    background: #0f172a !important;
+    border: 1px solid rgba(255,255,255,0.08);
+    color: #f1f5f9 !important;
+}
+
+.form-control::placeholder {
+    color: #9696cd !important;
+}
+
+.form-control:focus {
+    background: #0f172a;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99,102,241,0.2);
+}
+
+/* BOTONES */
+.btn-success {
+    background: #6366f1;
+    border: none;
+    font-weight: 600;
+}
+
+.btn-success:hover {
+    background: #4f46e5;
+}
+
+/* SKIP LINK */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background: #6366f1;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+/* ===== FORZAR TEXTO BLANCO GLOBAL ===== */
+/* ===== BASE PREMIUM OSCURA CORRECTA ===== */
+
+body {
+    background: #0b1120;
+    color: #f1f5f9;
+}
+
+/* Tarjetas */
+.card {
+    background: #111827;
+    border: 1px solid rgba(255,255,255,0.06) !important;
+    border-radius: 16px;
+    padding: 2rem;
 }
 
 /* Títulos */
 h1, h2, h3 {
-  font-weight: 600;
+    color: #ffffff;
+    font-weight: 700;
 }
 
-/* Código */
-code {
-  font-family: "Fira Code", monospace;
-  background-color: rgba(0,0,0,0.08);
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
+/* Texto normal */
+p, li, label, td, th {
+    color: #000000 !important;
 }
 
-/* Bloques pre */
-pre {
-  background-color: #1b263b;
-  color: #ffffff;
-  border-radius: var(--radius);
+/* Texto secundario */
+.lead {
+    color: #94a3b8 !important;
 }
-
-/* Tabla */
-.table {
-  border-radius: var(--radius);
-  overflow: hidden;
-}
-
-/* 🔥 ARREGLO IMPORTANTE: NO sobrescribir .btn */
-/* Solo personalizamos colores si quieres un estilo propio */
-
-.btn-custom {
-  background-color: var(--accent);
-  color: #ffffff;
-  border-radius: var(--radius);
-  transition: all 0.3s ease;
-}
-
-.btn-custom:hover {
-  background-color: #1f7f72;
-  color: #ffffff;
-}
-
-/* Formularios más suaves */
-.form-control,
-.form-select {
-  border-radius: var(--radius);
-}
-
-/* Navbar mejora contraste */
-.navbar {
-  border-radius: var(--radius);
-}
-
-/* Skip link */
-.skip-link {
-  position: absolute;
-  left: -999px;
-}
-
-.skip-link:focus {
-  left: 0;
-  top: 0;
-  padding: 0.5rem 1rem;
-  background: #8c52ff;
-  color: #fff;
-  z-index: 1000;
-  border-radius: var(--radius);
+/* TABLA MULTIMEDIA - TEXTO NEGRO */
+#multimedia table td,
+#multimedia table th {
+    color: #ffffff !important;
 }
